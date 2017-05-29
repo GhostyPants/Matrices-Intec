@@ -1,12 +1,5 @@
 from numpy import *
 
-# arr = zeros((3,3))
-#
-# arr[0][2] = 2
-#
-# print arr
-# print len(arr)
-
 ciclo = True
 
 mat1 = None
