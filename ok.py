@@ -9,8 +9,8 @@ from numpy import *
 
 ciclo = True
 
-mat1 = zeros((2,2))
-mat2 = zeros((3,3))
+mat1 = None
+mat2 = None
 valorMostrar = None
 def menu():
     print '''
@@ -41,6 +41,8 @@ def cambiarValores(matriz):
             valor = 'Usted se encuentra en la posicion {0}, {1} que valor desea: '.format((j+1),(k+1))
             matriz[j][k]= float(raw_input(valor))
 def crearMatriz():
+    global mat1
+    global mat2
     if mat1 is not None:
         if mat2 is not None:
             print '\n Ya alcanzo el maximo de matrices que puede crear que es 2'
@@ -55,6 +57,8 @@ def crearMatriz():
         mat1 = zeros((filas,col))
         print "\n Matriz creada exitosamente"
 def mostrarMatriz():
+    global mat1
+    global mat2
     if mat1 is not None and mat2 is not None:
         mostrar()
         if valorMostrar == 1:
@@ -69,6 +73,8 @@ def mostrarMatriz():
     elif mat1 is not None:
         print '\n%s'%(mat1)
 def llenarMatriz():
+    global mat1
+    global mat2
     if mat1 is None and mat2 is None:
         print '\n No existe ninguna matriz'
     elif mat1 is not None and mat2 is not None:
@@ -84,6 +90,8 @@ def llenarMatriz():
 def cambiarDimension():
     seg = False
     def seguro():
+        global mat1
+        global mat2
         elegir = raw_input('\n Esta funcion borrara la matriz elegida y la llenara de zeros\n Quieres seguir(s/n): ')
         if elegir == 's':
             mostrar()
