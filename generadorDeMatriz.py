@@ -122,7 +122,6 @@ def cambiarDimension():
     elif mat1 is None:
         print '\n Antes de usar esta funcion necesita tener creada el maximo de matrices'
 def sumarMatriz():
-    igual = False
     global mat1
     global mat2
     global suma
