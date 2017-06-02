@@ -170,3 +170,4 @@ while 1:
                 msgbox(suma,'Generador de matrices')
             else:
                 msgbox('Usted no ha realizado ninguna suma',tituloProg)
+                
