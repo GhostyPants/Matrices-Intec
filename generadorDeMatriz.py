@@ -1,5 +1,5 @@
 from numpy import *
-
+#yo estuve aqui
 ciclo = True
 
 mat1 = None
